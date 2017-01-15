@@ -212,11 +212,6 @@ RelatedPopups.prototype = {
     overrideRelatedGlobals: function() {
         var self = this;
 
-        window.showRelatedObjectLookupPopup
-            = window.showAddAnotherPopup
-            = window.showRelatedObjectPopup
-            = function() { };
-
         window.dismissRelatedLookupPopup = function(win, chosenId) {
             self.closePopup({
                 action: 'lookup',
